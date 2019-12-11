@@ -1,0 +1,12 @@
+.keditor-wrapper {
+  min-height: 1200px;
+}
+.keditor-iframe-wrapper {
+    overflow: auto;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.keditor-iframe-width-switcher {
+    min-width: initial !important;
+}

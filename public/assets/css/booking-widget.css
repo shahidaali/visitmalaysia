@@ -1,0 +1,1254 @@
+.booking_wrapper{
+    width:475px;
+    margin:50px auto;
+    padding:20px;
+    background:rgba(0,0,0,.3);
+    box-sizing:border-box
+}
+.booking_wrapper .booking_tabs{
+    border:1px solid #fff;
+    table-layout:fixed;
+    display:table;
+    width:100%
+}
+.booking_wrapper .booking_tabs a{
+    display:table-cell;
+    width:100%;
+    position:relative;
+    padding:10px 15px;
+    color:#fff;
+    cursor:pointer;
+    font-size:14px;
+    line-height:1em;
+    font-weight:700;
+    text-align:center;
+    vertical-align:middle;
+    transition:all .5s ease
+}
+.booking_wrapper .booking_tabs a.active{
+    background:rgba(0,0,0,.5)
+}
+.booking_wrapper .booking_tabs a.active:hover{
+    background:rgba(0,0,0,.5)
+}
+.booking_wrapper .booking_tabs a:hover{
+    background:rgba(0,0,0,.3)
+}
+.booking_wrapper .tab-content{
+    position:relative
+}
+.booking_wrapper .booking_controls_wrap{
+    margin-top:10px;
+    color:#fff
+}
+.booking_wrapper .booking_controls_wrap input,.booking_controls_wrap select{
+    width:100%;
+    color:#333;
+    background:#fff;
+    margin:0 0 5px 0;
+    padding:8px 10px;
+    border:1px solid #999;
+    font-size:12px;
+    font-weight:400;
+    outline:none;
+    -webkit-border-radius:0;
+    border-radius:0;
+    -webkit-appearance:none
+}
+.booking_wrapper .booking_controls_wrap input.date_control{
+    color:#fff;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    text-indent:500px
+}
+.booking_wrapper .booking_controls_wrap .booking_from{
+    float:left;
+    width:275px
+}
+.booking_wrapper .booking_controls_wrap .booking_dates{
+    float:right;
+    width:160px
+}
+.booking_wrapper .booking_controls_wrap .booking_from .travellers_cabin_field{
+    position:relative;
+    cursor:pointer
+}
+.booking_wrapper .booking_controls_wrap .booking_from .travellers_cabin_field input{
+    margin:0;
+    padding-right:34px
+}
+.booking_wrapper .booking_controls_wrap .booking_from .travellers_cabin_field .icon_down{
+    display:block;
+    width:16px;
+    height:10px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background-image: url(../images/icon_sprites.png);
+    background-position:-256px -72px;
+    background-repeat:no-repeat;
+    pointer-events:none;
+    right:10px
+}
+.booking_wrapper .booking_controls_wrap .booking_dates input.date_control{
+    width:75px;
+    height:75px
+}
+.booking_wrapper .booking_controls_wrap .booking_dates label{
+    position:relative;
+    cursor:pointer;
+    overflow:hidden;
+    float:left;
+    padding-left:5px;
+    width:50%
+}
+.booking_wrapper .booking_controls_wrap .booking_dates .input-plus-icon:after{
+    content:'+';
+    position:absolute;
+    top:46%;
+    left:54%;
+    transform:translate(-50%,-50%);
+    color:#0077c0;
+    font-size:40px;
+    line-height:40px;
+    font-weight:800;
+    width:40px;
+    height:40px;
+    z-index:10;
+    text-align:center;
+    cursor:pointer
+}
+.booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap{
+    position:absolute;
+    width:100%;
+    min-height:75px;
+    top:0
+}
+.booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap span{
+    position:relative;
+    display:block;
+    color:#0077c0;
+    text-align:center;
+    width:93%;
+    padding:0 5px
+}
+.booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap span:first-child{
+    padding-top:6px
+}
+.booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap span:first-child,.calendar_wrap span:last-child{
+    font-size:11px;
+    font-weight:600
+}
+.booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap span:nth-child(2){
+    font-size:32px;
+    line-height:32px;
+    font-weight:800
+}
+.booking_wrapper .booking_controls_wrap .bc_dropdown{
+    width:50%;
+    padding-right:5px;
+    float:left;
+    height:35px;
+    font-size:11px;
+    font-weight:400;
+    text-align:left;
+    margin-bottom:5px
+}
+.booking_wrapper .booking_controls_wrap .bc_dropdown:first-child{
+    width:100%;
+    padding-right:0
+}
+.booking_wrapper .booking_controls_wrap .bc_dropdown:last-child{
+    padding:0
+}
+.booking_wrapper .booking_controls_wrap .dd-slick-wrapper .dd-select{
+    border-radius:0
+}
+.booking_wrapper .booking_controls_wrap .dd-slick-wrapper .dd-select .dd-selected{
+    padding:9px;
+    color:#58595b;
+    font-weight:400
+}
+.booking_wrapper .booking_controls_wrap .dd-slick-wrapper .dd-select .dd-pointer-down{
+    width:16px;
+    height:10px;
+    background-image:url(/Components/VDFactory/assets/images/icon_sprites.png);
+    background-position:-256px -72px;
+    background-repeat:no-repeat;
+    margin-top:-5px
+}
+.booking_wrapper .booking_controls_wrap .dd-slick-wrapper .dd-select .dd-pointer-down.dd-pointer-up{
+    background-position:-272px -72px
+}
+.booking_wrapper .booking_controls_wrap .dd-slick-wrapper .dd-container .dd-options{
+    width:100%
+}
+.booking_wrapper .booking_controls_wrap .booking_button{
+    position:relative;
+    background-color:#009ade;
+    padding:7px;
+    margin:0;
+    text-align:center;
+    font-size:15px;
+    transition-duration:.5s;
+    transition-property:background-color;
+    color:#fff;
+    font-weight:bold;
+    text-transform:uppercase;
+    cursor:pointer;
+    display:block
+}
+.booking_wrapper .booking_controls_wrap .booking_button:hover{
+    color:#fff;
+    background-color:#0077c0
+}
+.booking_wrapper .error{
+    border-color:#f00 !important
+}
+.zh .traveller_cabin_info_popup .popover_close{
+    font-size:16px;
+    right:4px;
+    top:2px
+}
+.zh .booking_wrapper .booking_controls_wrap .booking_from .travellers_cabin_field input{
+    padding:6px 10px
+}
+.zh .booking_wrapper .booking_controls_wrap .dd-slick-wrapper .dd-select .dd-selected{
+    padding:7px 9px
+}
+.rightColumnPanel{
+    margin-top:30px
+}
+.rightColumnPanel h2.new-hero-heading{
+    font-size:20px;
+    min-height:inherit
+}
+.rightColumnPanel .booking_wrapper{
+    width:auto;
+    padding:20px;
+    background-color:#f1f1f2;
+    margin:10px auto 30px
+}
+.rightColumnPanel .booking_wrapper .booking_tabs{
+    border:none
+}
+.rightColumnPanel .booking_wrapper .booking_tabs a{
+    color:#666;
+    background-color:rgba(255,255,255,.5);
+    padding:12px
+}
+.rightColumnPanel .booking_wrapper .booking_tabs a:hover{
+    background:rgba(255,255,255,.8);
+    color:#666
+}
+.rightColumnPanel .booking_wrapper .booking_tabs a.active{
+    background:#fff;
+    color:#009ade
+}
+.rightColumnPanel .traveller_cabin_info_popup.on{
+    top:105px
+}
+.rightColumnPanel .booking_wrapper .booking_controls_wrap{
+    margin-top:20px
+}
+.rightColumnPanel .booking_wrapper .booking_controls_wrap .booking_from{
+    width:100%;
+    float:none
+}
+.rightColumnPanel .booking_wrapper .booking_controls_wrap .booking_from:after{
+    content:'';
+    display:block;
+    clear:both
+}
+.rightColumnPanel .booking_wrapper .booking_controls_wrap .bc_dropdown:after{
+    content:'';
+    display:block;
+    clear:both
+}
+.rightColumnPanel .booking_wrapper .booking_controls_wrap .bc_dropdown:first-child{
+    height:auto;
+    margin:0
+}
+.rightColumnPanel .booking_wrapper .booking_controls_wrap .bc_dropdown{
+    margin-bottom:0;
+    font-size:14px
+}
+.rightColumnPanel .booking_wrapper .booking_controls_wrap input,.booking_controls_wrap select{
+    margin-bottom:20px;
+    font-size:14px;
+    padding:7px 10px
+}
+.rightColumnPanel .booking_wrapper .booking_controls_wrap .dd-slick-wrapper .dd-select{
+    border-color:#999
+}
+.rightColumnPanel .booking_wrapper .booking_controls_wrap .booking_dates{
+    margin:20px auto;
+    float:none;
+    width:190px;
+    overflow:hidden
+}
+.rightColumnPanel .booking_wrapper .booking_controls_wrap .booking_dates label{
+    padding:0;
+    width:90px;
+    height:90px
+}
+.rightColumnPanel .booking_wrapper .booking_controls_wrap .booking_dates label:first-child{
+    margin-right:5px
+}
+.rightColumnPanel .booking_wrapper .booking_controls_wrap .booking_dates input.date_control{
+    width:100%;
+    height:100%
+}
+.rightColumnPanel .booking_wrapper .booking_controls_wrap .booking_dates .input-plus-icon:after{
+    top:50%;
+    left:50%
+}
+.rightColumnPanel .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap span{
+    width:100%
+}
+.rightColumnPanel .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap span:first-child,.rightColumnPanel .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap span:last-child{
+    font-size:13px
+}
+.rightColumnPanel .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap{
+    top:6px
+}
+.rightColumnPanel .booking_wrapper .booking_controls_wrap .dd-slick-wrapper .dd-select .dd-selected{
+    padding:7px
+}
+#ui-datepicker-div.ui-datepicker{
+    z-index:999 !important
+}
+.booking-panel .booking_wrapper .booking_tabs{
+    border:none
+}
+.booking-panel .booking_wrapper .booking_tabs a{
+    padding:15px;
+    color:#666;
+    background-color:rgba(255,255,255,.5)
+}
+.booking-panel .booking_wrapper{
+    margin:0 0 0;
+    position:relative;
+    padding:38px 30px;
+    min-height:350px;
+    background-color:rgba(236,236,236,.9)
+}
+.booking-panel .booking_wrapper .booking_tabs a:hover{
+    background:rgba(255,255,255,.8);
+    color:#666
+}
+.booking-panel .booking_wrapper .booking_tabs a.active{
+    background:#fff;
+    color:#009ade
+}
+.booking-panel .booking_wrapper .booking_tabs a.active:hover{
+    background:rgba(255,255,255,.8)
+}
+.booking-panel .booking_wrapper .booking_controls_wrap .booking_from{
+    width:225px
+}
+.booking-panel .booking_controls_wrap{
+    margin:30px 0 0
+}
+.booking-panel .traveller_cabin_info_popup.on{
+    top:105px
+}
+.booking-panel .booking_wrapper .booking_controls_wrap input,.booking_controls_wrap select{
+    padding:11px 10px;
+    border:1px solid transparent;
+    margin-bottom:6px;
+    font-size:14px
+}
+.booking-panel .booking_wrapper .booking_controls_wrap .booking_from .bc_dropdown{
+    margin:0;
+    height:auto;
+    font-size:14px
+}
+.booking-panel .booking_wrapper .booking_controls_wrap .booking_dates .input-plus-icon:after{
+    top:50%
+}
+.booking-panel .booking_wrapper .booking_controls_wrap .dd-slick-wrapper .dd-select{
+    border:1px solid
+}
+.booking-panel .booking_wrapper .booking_controls_wrap .dd-slick-wrapper .dd-select .dd-selected{
+    padding:11px
+}
+.booking-panel .booking_wrapper .booking_controls_wrap .dd-slick-wrapper .dd-options{
+    border:none
+}
+.booking-panel .booking_wrapper .booking_controls_wrap .booking_dates{
+    width:190px;
+    overflow:hidden
+}
+.booking-panel .booking_wrapper .booking_controls_wrap .booking_dates label{
+    width:50%;
+    height:92px
+}
+.booking-panel .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap{
+    top:6px
+}
+.booking-panel .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap span:first-child,.booking-panel .calendar_wrap span:last-child{
+    font-size:13px
+}
+.booking-panel .booking_wrapper .booking_controls_wrap .booking_dates input.date_control{
+    width:100%;
+    height:100%;
+    border:1px solid transparent
+}
+.booking-panel .booking_wrapper .select2-container .select2-selection--single{
+    height:43px
+}
+.booking-panel .booking_wrapper .select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height:43px
+}
+.booking-panel .select2-container--default .select2-selection--single .select2-selection__arrow{
+    top:5px
+}
+.booking-panel .booking_wrapper .booking_controls_wrap .booking_button{
+    padding:12px;
+    margin-top:30px;
+    font-size:18px
+}
+.vdfactory-getting-around .dd-select .dd-selected-text{
+    font-size:11px
+}
+@media(max-width:1024px){
+    .booking-panel{
+        float:none !important
+    }
+    .booking-panel .booking_wrapper{
+        position:relative;
+        margin:0 auto;
+        padding:20px;
+        min-height:inherit
+    }
+    .booking-panel .booking_wrapper .booking_controls_wrap .booking_from{
+        width:50%
+    }
+    .booking-panel .booking_wrapper .booking_controls_wrap .booking_dates{
+        width:50%
+    }
+    .booking-panel .booking_wrapper .booking_controls_wrap .booking_dates label{
+        width:50%
+    }
+}
+@media(max-width:320px){
+    .booking-panel .booking_wrapper{
+        padding:30px 10px
+    }
+}
+.travellers_cabin_field{
+    position:relative;
+    float:left;
+    width:100%
+}
+.travellers_cabin_field>label{
+    width:100%;
+    float:left;
+    margin:0 0 3px 0;
+    color:#58595b;
+    font-size:12px;
+    font-weight:400
+}
+.travellers_cabin_field input{
+    cursor:pointer;
+    width:100%;
+    float:left;
+    background:#fff;
+    margin:0;
+    padding:8px 10px;
+    border:1px solid #999;
+    font-size:12px;
+    font-weight:600;
+    color:#58595b;
+    outline:none
+}
+.traveller_cabin_info_popup{
+    position:absolute;
+    width:100%;
+    padding:15px;
+    background:#fff;
+    transition:all ease-in .01s;
+    border:1px solid #545557;
+    box-shadow:1px 1px 2px 2px rgba(34,36,38,.1);
+    z-index:-1;
+    opacity:0;
+    color:#333;
+    font-weight:400;
+    max-width:250px;
+    top:88px;
+    bottom:0;
+    text-align:left
+}
+.traveller_cabin_info_popup:before,.traveller_cabin_info_popup:after{
+    content:" ";
+    position:absolute;
+    left:50%;
+    bottom:100%;
+    height:0;
+    width:0;
+    border:solid transparent;
+    pointer-events:none
+}
+.traveller_cabin_info_popup:before{
+    margin-left:-11px;
+    border-width:11px;
+    border-bottom-color:#545557
+}
+.traveller_cabin_info_popup:after{
+    margin-left:-10px;
+    border-width:10px;
+    border-bottom-color:#fff
+}
+.traveller_cabin_info_popup.on{
+    opacity:1;
+    z-index:12;
+    bottom:inherit;
+    top:88px
+}
+.traveller_cabin_info_popup.onMob{
+    opacity:1;
+    z-index:12;
+    top:inherit;
+    bottom:85px
+}
+.traveller_cabin_info_popup .popover_close{
+    position:absolute;
+    top:0;
+    right:10px;
+    font-weight:100;
+    font-size:24px;
+    outline:none;
+    width:24px
+}
+.traveller_cabin_info_popup .label{
+    margin:0 0 5px 0;
+    font-size:12px;
+    display:block;
+    width:100%;
+    float:left
+}
+.traveller_cabin_info_popup i{
+    font-size:14px
+}
+.traveller_cabin_info_popup .dd-slick-wrapper .dd-select{
+    border-radius:0
+}
+.traveller_cabin_info_popup .dd-slick-wrapper .dd-select .dd-selected{
+    padding:9px 30px 9px 9px;
+    color:#58595b;
+    font-weight:400
+}
+.traveller_cabin_info_popup .childNode .dd-slick-wrapper .dd-select .dd-selected{
+    width:60px
+}
+.traveller_cabin_info_popup .dd-slick-wrapper .dd-select .dd-pointer-down{
+    width:16px;
+    height:10px;
+    background-image:url(/Components/VDFactory/assets/images/icon_sprites.png);
+    background-position:-256px -72px;
+    background-repeat:no-repeat
+}
+.traveller_cabin_info_popup .dd-slick-wrapper .dd-select .dd-pointer-down.dd-pointer-up{
+    background-position:-272px -72px
+}
+.traveller_cabin_info_popup .dd-slick-wrapper .dd-select .dd-selected-text{
+    width:100%;
+    margin:0 20px 0 0;
+    padding:0
+}
+.traveller_cabin_info_popup .dd-slick-wrapper ul.dd-options{
+    max-height:160px !important
+}
+.traveller_cabin_info_popup .dd-slick-wrapper .dd-options{
+    width:100%
+}
+div.tooltip-inner{
+    width:350px
+}
+.traveller_count{
+    margin-top:15px;
+    border-top:1px solid #f1f1f1;
+    position:relative
+}
+.traveller_count .info_traveller{
+    position:absolute;
+    right:0;
+    top:10px
+}
+.traveller_count .label{
+    margin-top:12px
+}
+.traveller_count input.traveller_numbers{
+    float:left;
+    box-sizing:border-box;
+    height:30px;
+    width:30px;
+    padding:0;
+    border-radius:0;
+    border:1px solid #009ade;
+    background:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    font-size:16px;
+    text-align:center;
+    font-weight:400;
+    color:#009ade
+}
+.traveller_count button{
+    float:left;
+    height:30px;
+    width:30px;
+    padding:0;
+    border:1px solid #009ade;
+    color:#009ade;
+    background-color:#fff;
+    font-weight:400;
+    font-size:25px;
+    line-height:1em;
+    text-align:center;
+    cursor:pointer;
+    outline:0
+}
+.traveller_count button.decrement{
+    clear:left;
+    border-right:0
+}
+.traveller_count button.increment{
+    border-left:0
+}
+.traveller_count button:disabled{
+    cursor:not-allowed;
+    opacity:.3
+}
+.traveller_count span.labelAdd{
+    float:left;
+    display:inline-block;
+    margin-left:5px;
+    font-size:12px;
+    line-height:1em;
+    margin:7px;
+    max-width:112px;
+    text-align:left
+}
+.childAges{
+    float:left;
+    clear:left;
+    width:100%;
+    margin-top:15px;
+    padding-top:15px;
+    border-top:1px solid #f1f1f1
+}
+.childAges label{
+    margin:0;
+    text-align:left;
+    padding:5px 5px 0 0;
+    width:50%;
+    padding-right:15px;
+    -webkit-flex:1 1 auto;
+    -ms-flex:1 1 auto;
+    flex:1 1 auto
+}
+.childAges select{
+    margin-left:8px;
+    float:left
+}
+.childAges .select2-container{
+    width:50% !important;
+    -webkit-flex:1 1 auto;
+    -ms-flex:1 1 auto;
+    flex:1 1 auto
+}
+.childAges .childNode{
+    float:left;
+    width:100%;
+    margin-bottom:5px;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:flex
+}
+.button_done{
+    padding:8px 22px;
+    background:#009ade;
+    color:#fff;
+    font-size:14px;
+    line-height:1.25em;
+    font-weight:700;
+    border:1px solid #009ade;
+    transition-duration:.25s;
+    transition-property:background-color;
+    width:100%;
+    text-align:center;
+    text-transform:uppercase;
+    box-shadow:0 1px 2px 0 rgba(34,36,38,.15);
+    display:block;
+    border:none;
+    cursor:pointer;
+    box-sizing:border-box
+}
+.button_done:hover{
+    color:#fff;
+    background:#0077c0
+}
+.sw_autocomplete.ui-autocomplete{
+    position:absolute;
+    box-shadow:5px 0 20px 0 rgba(34,36,38,.15);
+    max-width:275px;
+    max-height:300px;
+    border:1px solid #dbdbdb;
+    z-index:50;
+    border-radius:0;
+    overflow:auto;
+    padding:0;
+    font-weight:400
+}
+.sw_autocomplete.ui-autocomplete .ui-menu-item{
+    background:#fff;
+    font-size:14px;
+    width:auto;
+    padding:10px;
+    height:auto;
+    line-height:inherit;
+    white-space:normal;
+    cursor:pointer;
+    border-bottom:1px solid #dbdbdb
+}
+.sw_autocomplete.ui-autocomplete .ui-menu-item:last-child{
+    border-bottom:none
+}
+.sw_autocomplete.ui-autocomplete .ui-menu-item:hover{
+    background:#f1f1f1
+}
+.sw_autocomplete.ui-autocomplete .ui-menu-item a{
+    color:#333;
+    display:-ms-inline-flexbox;
+    display:-webkit-inline-flex;
+    display:inline-flex;
+    box-sizing:border-box;
+    line-height:1.25em
+}
+.sw_autocomplete.ui-autocomplete .ui-menu-item:hover i{
+    color:#333
+}
+.sw_autocomplete.ui-autocomplete .ui-menu-item i{
+    color:#999;
+    margin-right:10px;
+    font-size:20px !important
+}
+.tooltipster-sidetip .tooltipster-box{
+    border:none
+}
+.tooltipster-sidetip .tooltipster-content{
+    color:#333;
+    box-shadow:0 0 14px rgba(0,0,0,.5);
+    background:#fff;
+    padding:10px;
+    font-size:12px;
+    font-weight:400;
+    border-radius:10px
+}
+.tooltipster-sidetip .tooltipster-arrow-border{
+    border:none
+}
+.tooltipster-sidetip.tooltipster-right .tooltipster-arrow-background{
+    left:1px
+}
+.car_wrap{
+    overflow:hidden
+}
+.car_wrap .car_column{
+    width:50%;
+    float:left;
+    text-align:left
+}
+.car_wrap .car_column:nth-child(odd){
+    padding-right:10px
+}
+.car_wrap:after{
+    content:'';
+    clear:both
+}
+.car_wrap .car_column label{
+    margin-bottom:2px
+}
+.flight-hotel-widget-section{
+    width:100%;
+    max-width:1000px;
+    margin:60px auto 0;
+    background:#fff;
+    padding:0
+}
+.flight-hotel-widget-section .booking_wrapper{
+    width:100%;
+    float:left;
+    margin:0;
+    background:#fff;
+    padding:0
+}
+.flight-hotel-widget-section .tab-content{
+    background-color:rgba(236,236,236,.6);
+    padding:50px 20px;
+    float:left;
+    width:100%
+}
+.flight-hotel-widget-section .booking_controls_wrap{
+    margin-top:0
+}
+.flight-hotel-widget-section .booking_controls_wrap .clear{
+    display:none
+}
+.flight-hotel-widget-section .booking_tabs{
+    border:0 none;
+    width:auto;
+    float:right;
+    max-width:100%
+}
+.flight-hotel-widget-section .booking_tabs a{
+    width:200px;
+    float:left;
+    padding:15px 20px;
+    color:#555;
+    border:1px #d3d3d4 solid
+}
+.flight-hotel-widget-section .booking_tabs a.active:hover{
+    background-color:rgba(236,236,236,.6)
+}
+.flight-hotel-widget-section .booking_tabs a.active{
+    border:1px solid transparent;
+    background-color:rgba(236,236,236,.6);
+    color:#009ade
+}
+.flight-hotel-widget-section .booking_wrapper .booking_controls_wrap .dd-slick-wrapper .dd-select .dd-selected{
+    padding:12px 10px;
+    font-size:13px
+}
+.flight-hotel-widget-section .traveller_cabin_info_popup,.flight-hotel-widget-section .traveller_cabin_info_popup.on{
+    top:164px
+}
+.flight-hotel-widget-section .booking_controls_wrap input,.flight-hotel-widget-section .booking_controls_wrap select{
+    color:#484848;
+    margin:0 0 10px 0;
+    padding:13px 10px;
+    border:1px #ccc solid;
+    font-size:13px;
+    font-weight:400;
+    box-shadow:none;
+    height:45px
+}
+.flight-hotel-widget-section .booking_controls_wrap .booking_from{
+    width:350px;
+    margin-right:20px
+}
+.flight-hotel-widget-section .booking_controls_wrap{
+    max-width:75%;
+    margin:0 auto
+}
+.flight-hotel-widget-section .booking_controls_wrap .booking_dates{
+    float:left;
+    width:210px
+}
+.flight-hotel-widget-section .booking_controls_wrap .booking_dates input.date_control{
+    width:100%;
+    height:100px;
+    margin:0 0 0 0
+}
+.flight-hotel-widget-section .booking_controls_wrap .booking_dates label{
+    padding:0 0;
+    width:calc(50% - 5px)
+}
+.flight-hotel-widget-section .booking_controls_wrap .booking_dates label:first-child{
+    margin:0 10px 0 0
+}
+.flight-hotel-widget-section .booking_controls_wrap .booking_dates .input-plus-icon:after{
+    top:50%;
+    left:50%
+}
+.flight-hotel-widget-section #flights .booking_controls_wrap .booking_button,.flight-hotel-widget-section #hotels .booking_controls_wrap .booking_button{
+    width:100px;
+    float:left;
+    margin:0 0 0 20px;
+    height:100px;
+    font-size:35px;
+    position:relative
+}
+.flight-hotel-widget-section #flights .booking_controls_wrap .booking_button .glyphicon,.flight-hotel-widget-section #hotels .booking_controls_wrap .booking_button .glyphicon{
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    position:absolute
+}
+.flight-hotel-widget-section #cars .booking_controls_wrap .booking_button{
+    padding:6px;
+    font-size:25px
+}
+.flight-hotel-widget-section .booking_controls_wrap .bc_dropdown{
+    margin:0;
+    height:auto
+}
+.flight-hotel-widget-section .booking_controls_wrap .bc_dropdown .dd-slick-wrapper .dd-select{
+    height:45px
+}
+.flight-hotel-widget-section .select2-container .select2-selection--single{
+    height:45px
+}
+.flight-hotel-widget-section .select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height:42px
+}
+.flight-hotel-widget-section .select2-container--default .select2-selection--single .select2-selection__arrow{
+    height:36px
+}
+.flight-hotel-widget-section .booking_controls_wrap{
+    color:#484848
+}
+.flight-hotel-widget-section .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap{
+    top:10px
+}
+.flight-hotel-widget-section .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap span{
+    width:100%
+}
+.flight-hotel-widget-section .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap span:first-child,.flight-hotel-widget-section .calendar_wrap span:last-child{
+    font-size:13px
+}
+html{
+    -webkit-tap-highlight-color:rgba(0,0,0,0)
+}
+.flight-hotel-individual-section{
+    width:100%;
+    max-width:1200px;
+    margin:0 0 50px 0;
+    background:rgba(236,236,236,.6);
+    padding:40px 0;
+    float:left !important;
+    min-height:250px
+}
+.flight-hotel-individual-section .booking_wrapper{
+    width:100%;
+    float:none;
+    margin:0 auto;
+    background:transparent;
+    padding:0;
+    max-width:1000px
+}
+.flight-hotel-individual-section .tab-content{
+    background-color:transparent;
+    padding:0;
+    float:none;
+    width:75%;
+    margin:25px auto 0 auto
+}
+.flight-hotel-individual-section .booking_controls_wrap{
+    margin-top:0
+}
+.flight-hotel-individual-section .booking_controls_wrap .clear{
+    display:none
+}
+.flight-hotel-individual-section .booking_tabs{
+    border:0 none;
+    width:75%;
+    float:none;
+    margin:0 auto;
+    max-width:100%;
+    background-color:transparent
+}
+.flight-hotel-individual-section .booking_wrapper .booking_tabs a{
+    width:auto;
+    float:left;
+    padding:0;
+    color:#555;
+    border:1px #d3d3d4 solid;
+    font-size:24px;
+    font-weight:normal;
+    pointer-events:none
+}
+.flight-hotel-individual-section .booking_wrapper .booking_tabs a.active:hover{
+    background-color:transparent
+}
+.flight-hotel-individual-section .booking_wrapper .booking_tabs a.active{
+    border:1px solid transparent;
+    background:transparent
+}
+.flight-hotel-individual-section .traveller_cabin_info_popup,.flight-hotel-individual-section .traveller_cabin_info_popup.on{
+    top:115px
+}
+.flight-hotel-individual-section .booking_controls_wrap input,.flight-hotel-individual-section .booking_controls_wrap select{
+    color:#484848;
+    margin:0 0 10px 0;
+    padding:13px 10px;
+    border:1px #ccc solid;
+    font-size:13px;
+    font-weight:400;
+    box-shadow:none;
+    height:45px
+}
+.flight-hotel-individual-section .booking_controls_wrap .booking_from{
+    width:400px;
+    margin:0 20px 0 0
+}
+.flight-hotel-individual-section .booking_controls_wrap .booking_dates{
+    float:left;
+    width:210px
+}
+.flight-hotel-individual-section .booking_controls_wrap .booking_dates input.date_control{
+    width:100%;
+    height:100px;
+    margin:0 0 0 0
+}
+.flight-hotel-individual-section .booking_controls_wrap .booking_dates label{
+    padding:0;
+    width:calc(50% - 5px)
+}
+.flight-hotel-individual-section .booking_controls_wrap .booking_dates label:first-child{
+    margin:0 10px 0 0
+}
+.flight-hotel-individual-section .booking_controls_wrap .booking_dates .input-plus-icon:after{
+    top:50%;
+    left:50%
+}
+.flight-hotel-individual-section .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap span{
+    width:100%
+}
+.flight-hotel-individual-section #flights .booking_controls_wrap .booking_button,.flight-hotel-individual-section #hotels .booking_controls_wrap .booking_button{
+    width:100px;
+    float:left;
+    margin:0 0 0 20px;
+    height:100px;
+    font-size:35px;
+    position:relative
+}
+.flight-hotel-individual-section #flights .booking_controls_wrap .booking_button .glyphicon,.flight-hotel-individual-section #hotels .booking_controls_wrap .booking_button .glyphicon{
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    position:absolute
+}
+.flight-hotel-individual-section #cars .booking_controls_wrap .booking_button{
+    padding:6px;
+    font-size:25px
+}
+.flight-hotel-individual-section .traveller_cabin_info_popup .dd-slick-wrapper .dd-select .dd-selected-text{
+    font-size:12px !important
+}
+.flight-hotel-individual-section .booking_controls_wrap .bc_dropdown{
+    margin:0;
+    height:auto
+}
+.flight-hotel-individual-section .booking_controls_wrap .bc_dropdown .dd-slick-wrapper .dd-select{
+    height:45px
+}
+.flight-hotel-individual-section .select2-container .select2-selection--single{
+    height:45px
+}
+.flight-hotel-individual-section .select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height:42px
+}
+.flight-hotel-individual-section .select2-container--default .select2-selection--single .select2-selection__arrow{
+    height:36px
+}
+.flight-hotel-individual-section .booking_controls_wrap{
+    color:#484848
+}
+.flight-hotel-individual-section .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap{
+    top:10px
+}
+.flight-hotel-individual-section .booking_wrapper .booking_controls_wrap .dd-slick-wrapper .dd-select .dd-selected{
+    padding:13px;
+    color:#58595b;
+    font-weight:400;
+    height:45px
+}
+.flight-hotel-individual-section .dd-select .dd-selected-text{
+    font-size:13px !important
+}
+.flight-hotel-individual-section .traveller_cabin_info_popup .dd-slick-wrapper .dd-select .dd-selected{
+    height:35px
+}
+.flight-hotel-individual-section .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap span:first-child,.flight-hotel-individual-section .calendar_wrap span:last-child{
+    font-size:13px
+}
+@media(max-width:1060px){
+    .tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background{
+        top:-1px
+    }
+}
+@media(max-width:1024px){
+    .flight-hotel-widget-section .booking_controls_wrap .booking_from{
+        width:calc(100% - 355px)
+    }
+    .flight-hotel-widget-section{
+        padding:0 20px
+    }
+    .flight-hotel-individual-section .booking_wrapper{
+        max-width:80%
+    }
+    .flight-hotel-individual-section .booking_controls_wrap .booking_from{
+        width:calc(100% - 350px)
+    }
+    .flight-hotel-individual-section .booking_tabs,.flight-hotel-individual-section .tab-content,.flight-hotel-widget-section .booking_controls_wrap,.flight-hotel-widget-section .booking_controls_wrap{
+        width:100%;
+        max-width:100%
+    }
+}
+@media(max-width:767px){
+    .booking_wrapper{
+        width:100%;
+        padding:10px;
+        margin:20px auto 15px
+    }
+    .booking_wrapper .booking_controls_wrap .booking_from{
+        width:50%
+    }
+    .booking_wrapper .booking_controls_wrap .booking_dates{
+        width:50%
+    }
+    .booking_wrapper .booking_controls_wrap .booking_dates input.date_control{
+        width:100%
+    }
+    .traveller_cabin_info_popup{
+        top:inherit;
+        bottom:80%
+    }
+    .traveller_cabin_info_popup:before,.traveller_cabin_info_popup:after{
+        bottom:-22px;
+        border-top-color:#545557;
+        border-bottom-color:transparent
+    }
+    .traveller_cabin_info_popup:after{
+        border-top-color:#fff;
+        bottom:-20px
+    }
+    .sw_autocomplete.ui-autocomplete{
+        max-height:200px
+    }
+    .flight-hotel-widget-section .booking_controls_wrap .booking_from{
+        width:100%;
+        margin:0 0 10px 0
+    }
+    .flight-hotel-widget-section .tab-content{
+        padding:30px 20px
+    }
+    .flight-hotel-widget-section .booking_controls_wrap .clear{
+        display:block
+    }
+    .flight-hotel-widget-section .booking_controls_wrap .booking_dates{
+        width:220px;
+        margin:0 auto;
+        float:none
+    }
+    .flight-hotel-widget-section #flights .booking_controls_wrap .booking_button,.flight-hotel-widget-section #hotels .booking_controls_wrap .booking_button{
+        width:100%;
+        margin:10px 0 0 0;
+        height:46px;
+        font-size:25px
+    }
+    .flight-hotel-widget-section .traveller_cabin_info_popup,.flight-hotel-widget-section .traveller_cabin_info_popup.on{
+        bottom:254px;
+        top:auto
+    }
+    .flight-hotel-widget-section{
+        padding:20px
+    }
+    .flight-hotel-individual-section .booking_controls_wrap .booking_from{
+        width:100%;
+        margin-bottom:10px
+    }
+    .flight-hotel-individual-section #hotels .booking_controls_wrap .booking_from{
+        width:100%;
+        margin-bottom:10px
+    }
+    .flight-hotel-individual-section .booking_controls_wrap .booking_dates{
+        width:220px;
+        margin:0 auto;
+        float:none
+    }
+    .flight-hotel-individual-section .booking_controls_wrap .clear{
+        display:block
+    }
+    .flight-hotel-individual-section #flights .booking_controls_wrap .booking_button,.flight-hotel-individual-section #hotels .booking_controls_wrap .booking_button{
+        width:100%;
+        margin:10px 0 0 0;
+        height:46px;
+        font-size:25px
+    }
+    .flight-hotel-individual-section .booking_wrapper{
+        max-width:100%;
+        padding:0 20px
+    }
+    .flight-hotel-individual-section .traveller_cabin_info_popup,.flight-hotel-individual-section .traveller_cabin_info_popup.on{
+        bottom:225px;
+        top:auto
+    }
+    .rightColumnPanel .traveller_cabin_info_popup.onMob{
+        bottom:210px
+    }
+}
+@media(max-width:480px){
+    .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap span{
+        padding:0 5px
+    }
+    .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap span:first-child,.calendar_wrap span:last-child{
+        font-size:10px
+    }
+    .booking-panel .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap span:first-child,.booking-panel .calendar_wrap span:last-child{
+        font-size:11px
+    }
+    .flight-hotel-widget-section .booking_tabs{
+        width:100%
+    }
+    .flight-hotel-widget-section .booking_tabs a{
+        width:50%;
+        padding:15px 10px
+    }
+    .flight-hotel-widget-section .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap span:first-child,.flight-hotel-widget-section .calendar_wrap span:last-child{
+        font-size:13px
+    }
+    .flight-hotel-individual-section .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap span:first-child,.flight-hotel-individual-section .calendar_wrap span:last-child{
+        font-size:13px
+    }
+}
+@media(max-width:360px){
+    .flight-hotel-widget-section .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap{
+        top:14px
+    }
+    .flight-hotel-individual-section .booking_wrapper .booking_controls_wrap .booking_dates label .calendar_wrap{
+        top:14px
+    }
+}
+@media only screen and (-webkit-device-pixel-ratio:2) and (device-aspect-ratio:40/71) and (max-device-width:568px) and (min-device-width:320px){
+    .vertical-widget-panel{
+        margin:0 15px 0 0 !important
+    }
+}
+@media(max-width:1024px) and (min-width:768px){
+    .booking-panel .booking_wrapper{
+        margin-top:10px !important
+    }
+}
+.vertical-widget-panel .booking_wrapper .booking_controls_wrap input{
+    margin-bottom:5px;
+    height:34.5px
+}
+.vertical-widget-panel .booking_wrapper .booking_controls_wrap .dd-slick-wrapper .dd-select .dd-selected{
+    height:32px
+}
+.booking_wrapper .booking_controls_wrap .dd-slick-wrapper .dd-select{
+    border:1px solid #999
+}
+@-moz-document url-prefix(){
+    .vertical-widget-panel .booking_wrapper .booking_controls_wrap input{
+        margin-bottom:5px;
+    }
+    .vertical-widget-panel .booking_wrapper .booking_controls_wrap .dd-slick-wrapper .dd-select .dd-selected{
+        padding:8px;
+    }
+    .vertical-widget-panel .header .booking_wrapper .booking_controls_wrap .booking_from .travellers_cabin_field input{
+        height:34px !important;
+    }
+    .booking-panel .booking_wrapper .booking_controls_wrap .dd-slick-wrapper .dd-select,.booking-panel .booking_wrapper .booking_controls_wrap .booking_from .travellers_cabin_field input{
+        height:42px !important;
+    }
+}

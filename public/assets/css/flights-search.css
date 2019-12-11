@@ -1,0 +1,583 @@
+body.flights-search-page {
+    background: #ececec;
+}
+.aaa-screenreader-hidden-Text {
+    text-indent: -999999px!important;
+    font-size: 0!important;
+    margin: 0!important;
+    position: absolute;
+    color: #000;
+}
+.search-sidebar {
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+}
+.widget-title {
+    color: #58595b;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 0 0;
+    padding: 25px 25px 0;    
+}
+.search-sidebar-widget {
+    padding: 25px;    
+}
+.search-results {
+    position: relative;
+    min-height: 500px;
+}
+.filter-field {
+    margin: 0 0 10px 0;
+}
+.filter-field input[type="text"],
+.filter-field select {
+    width: 100%;
+    background: #fff;
+    margin: 0;
+    padding: 8px 10px;
+    border: 1px solid #999;
+    font-size: 12px;
+    font-weight: 600;
+    color: #58595b;
+    outline: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+.filter-date-pick.filter-field .datepicker {
+    padding: 8px 12px 8px 38px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.filter-date-pick-inner {
+    width: 100%;
+    position: relative;
+}
+.filter-date-pick .date-pick-icon {
+    width: 19px;
+    height: 15px;
+    position: absolute;
+    top: calc(50% - 9px);
+    left: 10px;
+    cursor: pointer;
+    background: url(../images/date-icon.png) no-repeat 0 0;
+}
+.filter-searsh-btn .btn {
+    display: block;
+}
+#ui-datepicker-div.ui-datepicker{
+    background-color:#fff;
+    padding:10px;
+    border:1px solid #ccc;
+    display:none
+}
+.ui-datepicker-header{
+    position:relative
+}
+a.ui-datepicker-next.ui-state-disabled,a.ui-datepicker-prev.ui-state-disabled{
+    display:none
+}
+a.ui-datepicker-prev{
+    left:15px;
+    background:url(../images/date-pick-arrow.png) 0 0 no-repeat
+}
+a.ui-datepicker-next,a.ui-datepicker-prev{
+    width:7px;
+    height:12px;
+    text-indent:-99999px;
+    display:block;
+    top:13px;
+    position:absolute;
+    cursor:pointer
+}
+a.ui-datepicker-next{
+    right:15px;
+    background:url(../images/date-pick-arrow.png) -7px 0 no-repeat
+}
+.ui-datepicker-title{
+    background:#fff;
+    color:#484848;
+    font-size:16px;
+    font-weight:bold;
+    line-height:39px;
+    text-align:center
+}
+.ui-datepicker-calendar th,.ui-datepicker-calendar td{
+    text-align:center
+}
+#ui-datepicker-div.ui-datepicker thead span{
+    color:#484848;
+    font-size:14px;
+    height:28px;
+    line-height:28px;
+    width:28px;
+    margin:1px;
+    font-weight:300;
+    display:block
+}
+#ui-datepicker-div.ui-datepicker .ui-state-default{
+    width:auto !important
+}
+#ui-datepicker-div.ui-datepicker .ui-state-default{
+    color:#484848;
+    display:block;
+    font-size:14px;
+    height:28px;
+    width:28px;
+    margin:1px;
+    line-height:28px;
+    text-align:center
+}
+#ui-datepicker-div.ui-datepicker .ui-datepicker-current-day{
+    background-color:#c22c91
+}
+#ui-datepicker-div.ui-datepicker .ui-datepicker-current-day a{
+    color:#fff
+}
+.filter-time-pick{
+    width:100%;
+    float:left;
+    margin:0 0 10px 0
+}
+.filter-time-pick label{
+    width:100%;
+    float:left;
+    margin:0 0 3px 0;
+    color:#58595b;
+    font-size:12px;
+    font-weight:400
+}
+.filter-time-pick-inner{
+    position:relative;
+    float:left
+}
+.filter-time-pick-inner input{
+    width:100%;
+    padding:8px 12px 8px 38px;
+    border:1px solid #999;
+    background:url(../images/icon_time.png) no-repeat 10px center
+}
+.filter-time-pick-inner .time-pick-icon{
+    display:block;
+    width:16px;
+    height:10px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background-image:url(../images/icon_sprites.png);
+    background-position:-256px -72px;
+    background-repeat:no-repeat;
+    pointer-events:none;
+    right:10px
+}
+#ui-datepicker-div.ui-datepicker .ui-state-default {
+    color: #040404;
+    display: block;
+    font-size: 14px;
+    height: 28px;
+    width: 28px;
+    margin: 1px;
+    line-height: 28px;
+    text-align: center;
+}
+.ui-datepicker-buttonpane button {
+    background: none;
+    border: none;
+    outline: none;
+}
+.ui-datepicker-buttonpane button:last-child {
+    text-align: right !important;
+    float: right !important;
+    margin-right: 0 !important;
+}
+
+/*
+Flight Cards
+============================
+*/
+.vdf_item_card_list{
+    position:relative;
+    transition:height .5s ease;
+    list-style: none;
+    padding: 0px;
+}
+.vdf_item_card{
+    min-height:120px;
+    position:relative;
+    margin-bottom:10px;
+    background-color:#fff;
+    box-shadow:0 1px 2px 0 rgba(34,36,38,.15);
+    cursor:pointer
+}
+.vdf_item_card:after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100%;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    opacity:0;
+    transition:opacity .2s ease-in-out
+}
+.vdf_item_card:hover:after{
+    opacity:1
+}
+.vdf_flight_card_price{
+    padding:8px;
+    min-height:175px
+}
+.vdf_flight_search_item{
+    overflow:hidden;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:flex
+}
+.vdf_flight_maindetails{
+    width:73%;
+    top:0;
+    left:0;
+    bottom:0;
+    border-top:0;
+    padding:0 10px;
+    margin:0;
+    float:left
+}
+.vdf_flight_mainquote{
+    width:27%;
+    position:absolute;
+    top:8px;
+    right:0;
+    bottom:8px;
+    border-left:1px solid #e6e4eb;
+    border-top:0;
+    padding:0;
+    margin:0;
+    text-align:center
+}
+.vdf_flight_mainquote_table{
+    width:100%;
+    height:100%;
+    display:table
+}
+.vdf_flight_mainquote_table_cell{
+    display:table-cell;
+    vertical-align:middle
+}
+.vdf_flight_one_side{
+    width:100%;
+    padding:15px 0;
+    text-align:center
+}
+.via_return{
+    border-top:1px solid #f1f1f1
+}
+.vdf_flight_airline{
+    width:20%;
+    float:left;
+    display:table
+}
+.vdf_flight_airline img{
+    max-width:100px;
+    height:auto;
+    margin:0 auto
+}
+.vdf_flight_airline span.flight_name{
+    display:table-cell;
+    height:50px;
+    vertical-align:middle;
+    text-align:center;
+    font-size:13px;
+    line-height:1.25em
+}
+.vdf_flight_airline span.flight_name label{
+    display:inline-block;
+    line-height:1.25em;
+    font-size:13px
+}
+.vdf_flight_airline_mob .flight_name label{
+    display:inline-block;
+    line-height:1.5em
+}
+.vdf_flight_airline_mob{
+    display:none
+}
+.vdf_flight_depart_time{
+    float:left;
+    width:22%;
+    text-align:right;
+    display:table;
+    font-weight:600;
+    color:#939598
+}
+.vdf_flight_depart_time .depart_time{
+    font-weight:700;
+    color:#58595b
+}
+.vdf_flight_depart_time .start_airport,.vdf_flight_arrive_time .ends_airport{
+    display:inline-block;
+    cursor:help
+}
+.vdf_flight_stops{
+    float:left;
+    width:36%;
+    height:50px;
+    display:table
+}
+.vdf_flight_stops .duration{
+    font-weight:600
+}
+.vdf_flight_stops .stops{
+    font-weight:600
+}
+.vdf_flight_stops .stops span{
+    display:inline-block;
+    line-height:1.5em
+}
+.vdf_flight_stops .stops span:first-child{
+    color:#c22c91
+}
+.vdf_flight_stops .stops span+span{
+    margin-left:5px;
+    color:#939598;
+    cursor:help
+}
+.vdf_flight_arrive_time{
+    float:left;
+    width:22%;
+    text-align:left;
+    height:50px;
+    display:table;
+    font-weight:600;
+    color:#939598
+}
+.vdf_flight_arrive_time .arrive_time{
+    font-weight:700;
+    color:#58595b
+}
+.time_table_cell{
+    width:100%;
+    height:50px;
+    display:table-cell;
+    vertical-align:middle
+}
+.time_table_cell ul.stop-line{
+    height:2px;
+    width:85%;
+    background-color:#939598;
+    margin:5px auto;
+    position:relative;
+    padding:0;
+    display:-webkit-flex;
+    display:flex;
+    display:-ms-flexbox;
+    -webkit-justify-content:space-around;
+    justify-content:space-around;
+    -ms-flex-pack:space-around
+}
+.time_table_cell ul.stop-line:after{
+    content:" ";
+    width:8px;
+    height:13px;
+    background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAANCAYAAACUwi84AAAACXBIWXMAAAsSAAALEgHS3X78AAAAa0lEQVQY02OYPHXGBCAW+P//PwM2zACU/A/EF4DYAJ8CkCkfgDgAqwIQAyQJVdSAVQFUkQHUug0wd6EogCoSgCoAuwtDAZLCByCMy4QDWE2AugGkcwGGG4B0AtQXBfjCwQFfSCrgCkm8cQEA+DAYMND7lgIAAAAASUVORK5CYII=");
+    background-repeat:no-repeat;
+    position:absolute;
+    right:-8px;
+    top:-5px
+}
+.time_table_cell ul.stop-line li{
+    background-color:#fff;
+    border-radius:30px;
+    border:2px solid #939598;
+    width:10px;
+    height:10px;
+    line-height:0;
+    top:-4px;
+    position:relative;
+    display:inline-block;
+    margin:0 4%;
+    zoom:1
+}
+.time_table_cell ul.stop-line.one_stop:after{
+    content:'';
+    width:8px;
+    height:8px;
+    border:2px solid #939598;
+    border-radius:30px;
+    background-color:#fff;
+    background-repeat:no-repeat;
+    left:50%;
+    transform:translateX(-50%);
+    top:-5px;
+    position:absolute
+}
+.time_table_cell ul.stop-line.two_stop:before{
+    content:'';
+    width:8px;
+    height:8px;
+    border:2px solid #939598;
+    border-radius:30px;
+    background-color:#fff;
+    background-repeat:no-repeat;
+    left:25%;
+    transform:translateX(-50%);
+    top:-5px;
+    position:absolute
+}
+.time_table_cell ul.stop-line.two_stop:after{
+    content:'';
+    width:8px;
+    height:8px;
+    border:2px solid #939598;
+    border-radius:30px;
+    background-color:#fff;
+    background-repeat:no-repeat;
+    left:75%;
+    transform:translateX(-50%);
+    top:-5px;
+    position:absolute
+}
+.mainquote-deals {
+    margin-bottom: 18px;
+    color: #c22c91;
+    font-size: 22px;
+    line-height: 1em;
+    font-weight: 600;
+}
+.button_select_flight {
+    padding: 8px 22px;
+    background: #c22c91;
+    color: #fff !important;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 600;
+    transition-duration: .5s;
+    transition-property: background-color;
+}
+.autocomplete-search {
+    position: relative;
+}
+.autocomplete-search .loader-icon {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    width: 16px;
+    height: 16px;
+    background:url(../images/ajax-loader.gif) no-repeat center;
+    opacity: 0;
+    visibility: 0;
+}
+.autocomplete-search .loader-icon.show {
+    opacity: 1;
+    visibility: 1;
+}
+.spinner{
+    padding-bottom:30px;
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:-2;
+    text-align:center;
+    box-shadow:0 1px 2px 0 rgba(34,36,38,.15);
+    background:#fff;
+    transition:all .5s;
+    opacity:0
+}
+.spinner.on{
+    opacity:1;
+    z-index:1
+}
+.spinner:before{
+    content:'';
+    width:100%;
+    height:100%;
+    position:absolute;
+    background:rgba(255,255,255,.5);
+    top:0;
+    left:0
+}
+.spinner:after{
+    content:'';
+    width:610px;
+    height:430px;
+    background:url(../images/loading_map.png) center no-repeat;
+    left:50%;
+    transform:translateX(-50%);
+    display:block;
+    position:relative
+}
+.loader_flight{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:400px;
+    height:400px
+}
+.loader_flight:after{
+    content:'';
+    background:url(../images/loader_flight.png) no-repeat;
+    position:absolute;
+    top:0;
+    left:0;
+    display:block;
+    width:100%;
+    height:100%;
+    -webkit-animation-name:load_rotate;
+    animation-name:load_rotate;
+    -webkit-animation-duration:80s;
+    animation-duration:80s;
+    -webkit-animation-timing-function:linear;
+    animation-timing-function:linear;
+    -webkit-animation-iteration-count:infinite;
+    animation-iteration-count:infinite
+}
+.loader_flight_text{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    margin:0;
+    font-size:20px;
+    font-weight:600;
+    max-width:220px
+}
+.loader_flight_text span{
+    position:absolute;
+    left:100%;
+    top:0
+}
+.loader_flight_text span:after{
+    overflow:hidden;
+    display:inline-block;
+    vertical-align:bottom;
+    -webkit-animation:ellipsis steps(4,end) 900ms infinite;
+    animation:ellipsis steps(4,end) 2000ms infinite;
+    content:"…";
+    width:0
+}
+@-webkit-keyframes load_rotate{
+    100%{
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg)
+    }
+}
+@keyframes load_rotate{
+    100%{
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg)
+    }
+}
+@keyframes ellipsis{
+    to{
+        width:1.25em
+    }
+}
+@-webkit-keyframes ellipsis{
+    to{
+        width:1.25em
+    }
+}

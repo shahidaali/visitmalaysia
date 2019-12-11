@@ -1,0 +1,865 @@
+.center{
+    text-align:center
+}
+.vdf_flight_search{
+    max-width:1060px;
+    padding:20px 0;
+    margin:0 auto;
+    position:relative
+}
+.loadbotton{
+    margin:10px 0
+}
+.vdf_search_no_results{
+    background:#fff;
+    padding:10px 25px;
+    margin-bottom:10px
+}
+.vdf_search_no_results i{
+    margin:0 5px
+}
+.vdf_flight_heading{
+    width:100%;
+    margin-bottom:10px;
+    overflow:hidden
+}
+.vdf_flight_heading a i{
+    margin-left:5px
+}
+.heading_filters{
+    width:73%;
+    padding:0 10px;
+    float:left
+}
+.heading_filters li{
+    float:left;
+    text-align:center
+}
+.heading_filters li:first-child{
+    width:20%;
+    text-align:center
+}
+.heading_filters li:nth-child(2){
+    width:22%;
+    text-align:right
+}
+.heading_filters li:nth-child(3){
+    width:36%;
+    text-align:center
+}
+.heading_filters li:nth-child(4){
+    width:22%;
+    text-align:left
+}
+.heading_filters li a{
+    font-weight:600
+}
+.heading_filters li a.active{
+    color:#c22c91
+}
+.vdf_flight_heading .heading_prices{
+    width:27%;
+    float:right;
+    text-align:center;
+    display:block;
+    font-weight:600
+}
+.vdf_flight_heading .heading_prices a.active{
+    color:#c22c91
+}
+.vdf_flight_heading .heading_filters li a .fa-sort-desc,.vdf_flight_heading .heading_filters li a .fa-sort-asc,.vdf_flight_heading .heading_filters li a .fa-sort,.vdf_flight_heading .heading_prices a .fa-sort-desc,.vdf_flight_heading .heading_prices a .fa-sort-asc,.vdf_flight_heading .heading_prices a .fa-sort{
+    display:none
+}
+.vdf_flight_heading .heading_filters li a .fa-sort,.vdf_flight_heading .heading_prices a .fa-sort{
+    display:inline-block
+}
+.vdf_flight_heading .heading_filters li a.active .fa-sort-asc,.vdf_flight_heading .heading_filters li a.active .fa-sort-desc,.vdf_flight_heading .heading_prices a.active .fa-sort-asc,.vdf_flight_heading .heading_prices a.active .fa-sort-desc{
+    display:inline-block
+}
+.vdf_flight_heading .heading_filters li a.active .fa-sort,.vdf_flight_heading .heading_prices a.active .fa-sort{
+    display:none
+}
+.vdf_flight_heading .heading_filters li a.active[data-sortorder="asc"] .fa-sort-asc,.vdf_flight_heading .heading_prices a.active[data-sortorder="asc"] .fa-sort-asc{
+    display:none
+}
+.vdf_flight_heading .heading_filters li a.active[data-sortorder="desc"] .fa-sort-desc,.vdf_flight_heading .heading_prices a.active[data-sortorder="desc"] .fa-sort-desc{
+    display:none
+}
+.fa-sort-asc:before{
+    position:relative;
+    top:3px
+}
+.fa-sort-desc:before{
+    position:relative;
+    top:-3px
+}
+.vdf_item_card_list{
+    position:relative;
+    transition:height .5s ease
+}
+.vdf_item_card{
+    min-height:120px;
+    position:relative;
+    margin-bottom:10px;
+    background-color:#fff;
+    box-shadow:0 1px 2px 0 rgba(34,36,38,.15);
+    cursor:pointer
+}
+.vdf_item_card:after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100%;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    opacity:0;
+    transition:opacity .2s ease-in-out
+}
+.vdf_item_card:hover:after{
+    opacity:1
+}
+.vdf_flight_card_price{
+    padding:8px;
+    min-height:175px
+}
+.vdf_flight_search_item{
+    overflow:hidden;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:flex
+}
+.vdf_flight_maindetails{
+    width:73%;
+    top:0;
+    left:0;
+    bottom:0;
+    border-top:0;
+    padding:0 10px;
+    margin:0;
+    float:left
+}
+.vdf_flight_mainquote{
+    width:27%;
+    position:absolute;
+    top:8px;
+    right:0;
+    bottom:8px;
+    border-left:1px solid #e6e4eb;
+    border-top:0;
+    padding:0;
+    margin:0;
+    text-align:center
+}
+.vdf_flight_mainquote_table{
+    width:100%;
+    height:100%;
+    display:table
+}
+.vdf_flight_mainquote_table_cell{
+    display:table-cell;
+    vertical-align:middle
+}
+.vdf_flight_one_side{
+    width:100%;
+    padding:15px 0;
+    text-align:center
+}
+.via_return{
+    border-top:1px solid #f1f1f1
+}
+.vdf_flight_airline{
+    width:20%;
+    float:left;
+    display:table
+}
+.vdf_flight_airline img{
+    max-width:100px;
+    height:auto;
+    margin:0 auto
+}
+.vdf_flight_airline span.flight_name{
+    display:table-cell;
+    height:50px;
+    vertical-align:middle;
+    text-align:center;
+    font-size:13px;
+    line-height:1.25em
+}
+.vdf_flight_airline span.flight_name label{
+    display:inline-block;
+    line-height:1.25em;
+    font-size:13px
+}
+.vdf_flight_airline_mob .flight_name label{
+    display:inline-block;
+    line-height:1.5em
+}
+.vdf_flight_airline_mob{
+    display:none
+}
+.vdf_flight_depart_time{
+    float:left;
+    width:22%;
+    text-align:right;
+    display:table;
+    font-weight:600;
+    color:#939598
+}
+.vdf_flight_depart_time .depart_time{
+    font-weight:700;
+    color:#58595b
+}
+.vdf_flight_depart_time .start_airport,.vdf_flight_arrive_time .ends_airport{
+    display:inline-block;
+    cursor:help
+}
+.vdf_flight_stops{
+    float:left;
+    width:36%;
+    height:50px;
+    display:table
+}
+.vdf_flight_stops .duration{
+    font-weight:600
+}
+.vdf_flight_stops .stops{
+    font-weight:600
+}
+.vdf_flight_stops .stops span{
+    display:inline-block;
+    line-height:1.5em
+}
+.vdf_flight_stops .stops span:first-child{
+    color:#c22c91
+}
+.vdf_flight_stops .stops span+span{
+    margin-left:5px;
+    color:#939598;
+    cursor:help
+}
+.vdf_flight_arrive_time{
+    float:left;
+    width:22%;
+    text-align:left;
+    height:50px;
+    display:table;
+    font-weight:600;
+    color:#939598
+}
+.vdf_flight_arrive_time .arrive_time{
+    font-weight:700;
+    color:#58595b
+}
+.time_table_cell{
+    width:100%;
+    height:50px;
+    display:table-cell;
+    vertical-align:middle
+}
+.time_table_cell ul.stop-line{
+    height:2px;
+    width:85%;
+    background-color:#939598;
+    margin:5px auto;
+    position:relative;
+    padding:0;
+    display:-webkit-flex;
+    display:flex;
+    display:-ms-flexbox;
+    -webkit-justify-content:space-around;
+    justify-content:space-around;
+    -ms-flex-pack:space-around
+}
+.time_table_cell ul.stop-line:after{
+    content:" ";
+    width:8px;
+    height:13px;
+    background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAANCAYAAACUwi84AAAACXBIWXMAAAsSAAALEgHS3X78AAAAa0lEQVQY02OYPHXGBCAW+P//PwM2zACU/A/EF4DYAJ8CkCkfgDgAqwIQAyQJVdSAVQFUkQHUug0wd6EogCoSgCoAuwtDAZLCByCMy4QDWE2AugGkcwGGG4B0AtQXBfjCwQFfSCrgCkm8cQEA+DAYMND7lgIAAAAASUVORK5CYII=");
+    background-repeat:no-repeat;
+    position:absolute;
+    right:-8px;
+    top:-5px
+}
+.time_table_cell ul.stop-line li{
+    background-color:#fff;
+    border-radius:30px;
+    border:2px solid #939598;
+    width:10px;
+    height:10px;
+    line-height:0;
+    top:-4px;
+    position:relative;
+    display:inline-block;
+    margin:0 4%;
+    zoom:1
+}
+.time_table_cell ul.stop-line.one_stop:after{
+    content:'';
+    width:8px;
+    height:8px;
+    border:2px solid #939598;
+    border-radius:30px;
+    background-color:#fff;
+    background-repeat:no-repeat;
+    left:50%;
+    transform:translateX(-50%);
+    top:-5px;
+    position:absolute
+}
+.time_table_cell ul.stop-line.two_stop:before{
+    content:'';
+    width:8px;
+    height:8px;
+    border:2px solid #939598;
+    border-radius:30px;
+    background-color:#fff;
+    background-repeat:no-repeat;
+    left:25%;
+    transform:translateX(-50%);
+    top:-5px;
+    position:absolute
+}
+.time_table_cell ul.stop-line.two_stop:after{
+    content:'';
+    width:8px;
+    height:8px;
+    border:2px solid #939598;
+    border-radius:30px;
+    background-color:#fff;
+    background-repeat:no-repeat;
+    left:75%;
+    transform:translateX(-50%);
+    top:-5px;
+    position:absolute
+}
+@media all and (-ms-high-contrast:none){
+    .time_table_cell ul.stop-line{
+        -ms-flex-pack:center
+    }
+    .time_table_cell ul.stop-line li{
+        margin:0 10%
+    }
+}
+.mainquote-deals{
+    margin-bottom:18px;
+    color:#c22c91;
+    font-size:22px;
+    line-height:1em;
+    font-weight:600
+}
+.button_select_flight{
+    padding:8px 22px;
+    background:#c22c91;
+    color:#fff;
+    border-radius:5px;
+    display:inline-block;
+    font-weight:600;
+    transition-duration:.5s;
+    transition-property:background-color
+}
+.button_select_flight:hover{
+    color:#fff
+}
+.vdf_flight_popup .modal-content{
+    background:#fff;
+    padding:20px;
+    max-width:650px;
+    margin:0 auto;
+    border-radius:0;
+    box-shadow:0 1px 2px 0 rgba(34,36,38,.15);
+    position:relative
+}
+.button_close_popup{
+    display:block;
+    position:absolute;
+    top:0;
+    right:10px;
+    font-weight:100;
+    font-size:24px;
+    outline:none
+}
+.vdf_flight_popup h3{
+    font-size:18px;
+    margin:0 0 10px 0
+}
+.vdf_flight_popup h3 span{
+    font-size:14px;
+    font-weight:700
+}
+.vdf_flight_popup .vdf_flight_one_side .start_airport,.vdf_flight_popup .vdf_flight_one_side .ends_airport{
+    max-width:115px;
+    word-wrap:break-word;
+    -webkit-hyphens:auto;
+    -moz-hyphens:auto;
+    hyphens:auto;
+    cursor:auto
+}
+.vdf_flight_popup .vdf_flight_stops .stops span+span{
+    cursor:auto
+}
+.vdf_flight_popup h5{
+    font-weight:600;
+    padding:8px;
+    font-size:14px;
+    line-height:1.25em;
+    background:#f1f1f1;
+    margin:0
+}
+.vdf_flight_popup>li{
+    border-bottom:1px solid #f1f1f1;
+    overflow:hidden;
+    padding:10px 0
+}
+.vdf_flight_popup li:last-child{
+    border:none
+}
+.vdf_flight_popup .vdf_flight_airline{
+    float:left;
+    text-align:center
+}
+.vdf_flight_popup .vdf_flight_airline span{
+    display:table-cell;
+    height:50px;
+    vertical-align:middle;
+    text-align:center
+}
+.vdf_flight_popup .vdf_flight_mainquote_table_cell{
+    float:right
+}
+.vdf_flight_popup .mainquote-deals{
+    margin:0;
+    display:inline-block;
+    margin-right:10px;
+    line-height:50px;
+    font-size:16px
+}
+.vdf_flight_popup .vdf_flight_one_side{
+    border:1px solid #f1f1f1;
+    padding:10px;
+    margin-bottom:5px
+}
+.vdf_flight_options{
+    border:1px solid #f1f1f1;
+    padding:10px;
+    overflow:hidden;
+    margin-bottom:20px
+}
+.vdf_flight_options li{
+    clear:both;
+    border-bottom:1px solid #f1f1f1;
+    padding:8px 0
+}
+.vdf_flight_terms_conditions{
+    border-top:1px solid #f1f1f1;
+    border-bottom:1px solid #f1f1f1;
+    padding:10px 0;
+    position:relative
+}
+.vdf_flight_terms_conditions h3{
+    color:#009ade;
+    position:relative
+}
+.vdf_flight_terms_conditions h3>i{
+    margin-right:5px
+}
+.vdf_flight_terms_conditions h3 .term_title{
+    display:inline-block;
+    max-width:80%
+}
+.vdf_flight_terms_conditions .icon_arrow{
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%)
+}
+.vdf_flight_terms_conditions .icon_arrow i.on{
+    transform:scaleY(-1)
+}
+.vdf_flight_terms_conditions_details{
+    display:none
+}
+.vdf_flight_terms_conditions_details.on{
+    display:block
+}
+.vdf_flight_terms_conditions_details ul{
+    margin:10px
+}
+.vdf_flight_terms_conditions_details ul li{
+    list-style-type:disc
+}
+.cross_sell{
+    width:100%;
+    overflow:hidden;
+    margin-top:20px;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap
+}
+.cross_sell li{
+    padding:5px;
+    float:left;
+    width:50%;
+    transition:all .2s ease
+}
+.cross_sell li:hover{
+    background:#f1f1f1
+}
+.cross_sell li a{
+    border:1px solid #f1f1f1;
+    display:block;
+    padding:10px;
+    height:100%
+}
+.cross_sell li img{
+    max-width:100px;
+    height:auto;
+    float:left;
+    margin-right:10px
+}
+.cross_sell li .content_cross_sell{
+    float:left;
+    width:55%
+}
+.cross_sell li .content_cross_sell h3{
+    font-size:16px
+}
+.cross_sell li .content_cross_sell span.button_sell{
+    display:inline-block;
+    padding:8px;
+    color:#fff;
+    border-radius:5px;
+    font-size:12px;
+    line-height:12px
+}
+.cross_sell li .content_cross_sell span.button_sell.pink{
+    background-color:#c22c91
+}
+.cross_sell li .content_cross_sell span.button_sell.blue{
+    background-color:#009ade
+}
+.spinner{
+    padding-bottom:30px;
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:-2;
+    text-align:center;
+    box-shadow:0 1px 2px 0 rgba(34,36,38,.15);
+    background:#fff;
+    transition:all .5s;
+    opacity:0
+}
+.spinner.on{
+    opacity:1;
+    z-index:1
+}
+.spinner:before{
+    content:'';
+    width:100%;
+    height:100%;
+    position:absolute;
+    background:rgba(255,255,255,.5);
+    top:0;
+    left:0
+}
+.spinner:after{
+    content:'';
+    width:610px;
+    height:430px;
+    background:url(../images/loading_map.png) center no-repeat;
+    left:50%;
+    transform:translateX(-50%);
+    display:block;
+    position:relative
+}
+.loader_flight{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:400px;
+    height:400px
+}
+.loader_flight:after{
+    content:'';
+    background:url(../images/loader_flight.png) no-repeat;
+    position:absolute;
+    top:0;
+    left:0;
+    display:block;
+    width:100%;
+    height:100%;
+    -webkit-animation-name:load_rotate;
+    animation-name:load_rotate;
+    -webkit-animation-duration:80s;
+    animation-duration:80s;
+    -webkit-animation-timing-function:linear;
+    animation-timing-function:linear;
+    -webkit-animation-iteration-count:infinite;
+    animation-iteration-count:infinite
+}
+.loader_flight_text{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    margin:0;
+    font-size:20px;
+    font-weight:600;
+    max-width:220px
+}
+.zh .loader_flight_text{
+    font-weight:400
+}
+.loader_flight_text span{
+    position:absolute;
+    left:100%;
+    top:0
+}
+.loader_flight_text span:after{
+    overflow:hidden;
+    display:inline-block;
+    vertical-align:bottom;
+    -webkit-animation:ellipsis steps(4,end) 900ms infinite;
+    animation:ellipsis steps(4,end) 2000ms infinite;
+    content:"…";
+    width:0
+}
+.zh .loader_flight_text span{
+    top:7px
+}
+@-moz-document url-prefix(){
+    .zh .loader_flight_text span{
+        top:3px;
+    }
+}
+.load_updates{
+    text-align:center;
+    position:absolute;
+    background:rgba(0,0,0,.5);
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    display:none;
+    color:#fff;
+    padding:50px 0 0;
+    transition:all 1s ease
+}
+.load_updates.on{
+    display:block;
+    z-index:2
+}
+.load_updates h5{
+    display:inline-block;
+    padding:10px;
+    background:#009ade;
+    display:inline-block;
+    padding:10px;
+    color:#0077c0;
+    background:#fff;
+    position:fixed;
+    top:50%;
+    left:50%;
+    width:250px;
+    font-weight:600;
+    line-height:1.5em;
+    transform:translateX(-50%);
+    border-radius:10px
+}
+@media(min-width:1060px){
+    .load_updates h5{
+        left:56%
+    }
+}
+.progress-wrap{
+    display:none;
+    background:#c22c91;
+    border-radius:30px;
+    overflow:hidden;
+    position:absolute;
+    width:100%;
+    max-width:1060px;
+    height:6px;
+    position:fixed;
+    top:109px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:1
+}
+.progress-wrap .progress-bar{
+    border-radius:0 0 10px;
+    background:#b9c0c9;
+    left:0;
+    position:absolute;
+    top:0
+}
+.progress{
+    width:100%;
+    height:6px;
+    border-radius:10px;
+    margin:0;
+    position:relative;
+    top:0;
+    left:0
+}
+@media(max-width:1060px){
+    .spinner{
+        background:none;
+        box-shadow:none
+    }
+    .spinner:before{
+        background:none
+    }
+    .loader_flight_text{
+        font-weight:400;
+        font-size:16px
+    }
+}
+@media(max-width:767px){
+    .vdf_flight_search_item{
+        display:block
+    }
+    .progress-wrap{
+        top:86px
+    }
+    .vdf_search_no_results h3{
+        margin:0 0 10px 0
+    }
+    html.touch .autocomplete-suggestion{
+        font-size:14px
+    }
+    .vdf_flight_airline{
+        display:none
+    }
+    .vdf_flight_one_side{
+        padding:10px 0
+    }
+    .vdf_flight_airline_mob{
+        display:block;
+        text-align:center
+    }
+    .vdf_flight_airline_mob .plus_sign{
+        display:inline-block;
+        margin:0 10px
+    }
+    .vdf_flight_airline_mob img{
+        display:inline;
+        width:25%
+    }
+    .vdf_flight_airline_mob .flight_name{
+        padding:10px
+    }
+    .vdf_flight_stops .stops span+span{
+        display:none
+    }
+    .vdf_item_card{
+        padding:10px
+    }
+    .vdf_flight_depart_time,.vdf_flight_stops,.vdf_flight_arrive_time{
+        width:33.33%;
+        padding:0 2%
+    }
+    .vdf_flight_card_price{
+        min-height:inherit
+    }
+    .mainquote-deals{
+        display:inline;
+        margin-right:10px
+    }
+    .vdf_flight_maindetails,.vdf_flight_mainquote{
+        position:relative;
+        width:100%;
+        border:none
+    }
+    .vdf_flight_options .vdf_flight_airline{
+        width:50%
+    }
+    .vdf_pagination_result{
+        float:none;
+        text-align:center
+    }
+    .vdf_pagination h5{
+        display:inline-block;
+        height:auto;
+        margin-bottom:20px;
+        padding-left:0
+    }
+    .vdf_pagination{
+        float:none;
+        text-align:center
+    }
+    .vdf_pagination ul{
+        float:none;
+        display:inline-block
+    }
+    .vdf_flight_heading{
+        display:none !important
+    }
+    .vdf_flight_popup h3 span{
+        display:block
+    }
+    .vdf_flight_popup .vdf_flight_airline span{
+        display:table;
+        width:100%;
+        height:auto;
+        margin-bottom:20px
+    }
+    .vdf_flight_popup h3 span:before{
+        content:none
+    }
+    .vdf_flight_popup .vdf_flight_airline{
+        display:block;
+        width:100%;
+        margin-bottom:10px
+    }
+    .vdf_flight_popup .mainquote-deals{
+        display:block;
+        margin:0;
+        text-align:center
+    }
+    .vdf_flight_popup .vdf_flight_options .vdf_flight_airline{
+        width:40%
+    }
+    .vdf_flight_popup .vdf_flight_options .vdf_flight_airline img{
+        margin-top:20px;
+        max-width:80px
+    }
+    .vdf_flight_popup .vdf_flight_options .mainquote-deals{
+        line-height:2em
+    }
+    .cross_sell li img{
+        max-width:100%
+    }
+    .cross_sell li .content_cross_sell{
+        width:100%;
+        padding:10px 0 0
+    }
+    .cross_sell li .content_cross_sell h3{
+        font-size:12px
+    }
+    .vdf_flight_popup .vdf_flight_one_side .depart_time,.vdf_flight_popup .vdf_flight_one_side .arrive_time,.vdf_flight_popup .vdf_flight_one_side .start_airport,.vdf_flight_popup .vdf_flight_one_side .ends_airport{
+        max-width:84px
+    }
+    .loader_flight{
+        width:320px;
+        height:320px
+    }
+    .loader_flight:after{
+        background-size:320px
+    }
+}
+.errorClass{
+    border:1px solid #f00 !important
+}
+@media screen and (device-aspect-ratio:40/71){
+    .vdf_flight_popup .vdf_flight_one_side .start_airport,.vdf_flight_popup .vdf_flight_one_side .ends_airport{
+        max-width:66px
+    }
+}

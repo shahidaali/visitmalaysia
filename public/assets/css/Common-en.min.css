@@ -1,0 +1,825 @@
+html.modalopen{
+    overflow:hidden
+}
+body{
+    background:#ececec
+}
+*:active{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -moz-tap-highlight-color:rgba(0,0,0,0);
+    tap-highlight-color:rgba(0,0,0,0)
+}
+.hotel_sorting .select2-results .select2-results__options{
+    max-height:inherit;
+    font-size:12px
+}
+.button_map_view,.button_price_alerts,.button_save_search,.button_load_more,.button_done{
+    padding:8px 22px;
+    background:#fff;
+    color:#009ade;
+    font-size:14px;
+    line-height:1.25em;
+    font-weight:700;
+    border:1px solid #009ade;
+    transition-duration:.25s;
+    transition-property:background-color;
+    width:100%;
+    text-align:center;
+    text-transform:uppercase;
+    box-shadow:0 1px 2px 0 rgba(34,36,38,.15);
+    display:block
+}
+.button_map_view:hover,.button_price_alerts:hover,.button_save_search:hover,.button_save_search.on,.button_load_more:hover,.button_done{
+    background:#009ade;
+    color:#fff
+}
+.button_map_view:active,.button_price_alerts:active,.button_save_search:active{
+    border:1px solid #009ade
+}
+.button_price_alerts{
+    -webkit-transition-duration:.3s;
+    transition-duration:.3s
+}
+.button_price_alerts i,.button_save_search i{
+    margin-right:8px;
+    -webkit-transform:translateZ(0);
+    transform:translateZ(0)
+}
+.button_price_alerts:hover i,.button_price_alerts:focus i,.button_price_alerts:active i{
+    -webkit-animation-name:bell_buzz;
+    animation-name:bell_buzz;
+    -webkit-animation-duration:.75s;
+    animation-duration:.75s;
+    -webkit-animation-timing-function:linear;
+    animation-timing-function:linear;
+    -webkit-animation-iteration-count:1;
+    animation-iteration-count:1
+}
+.button_load_more{
+    max-width:300px;
+    display:inline-block;
+    border:none
+}
+.button_load_more i{
+    margin-right:8px
+}
+.button_load_more:hover i{
+    -webkit-animation:fa-spin 1s infinite steps(8);
+    animation:fa-spin 1s infinite steps(8)
+}
+.button_load_more:hover{
+    color:#fff;
+    background:#0077c0
+}
+.button_done{
+    border:none;
+    cursor:pointer
+}
+.button_done:hover{
+    color:#fff;
+    background:#0077c0
+}
+#ui-datepicker-div.ui-datepicker .ui-datepicker-buttonpane .ui-state-default{
+    outline:none
+}
+#ui-datepicker-div.ui-datepicker .ui-datepicker-buttonpane .ui-state-default:hover{
+    color:#c22c91
+}
+#ui-datepicker-div.ui-datepicker .ui-datepicker-buttonpane .ui-state-default.ui-datepicker-current{
+    display:none
+}
+.tooltipster-sidetip .tooltipster-box{
+    border:none
+}
+.tooltipster-sidetip .tooltipster-content{
+    color:#333;
+    box-shadow:0 2px 14px rgba(0,0,0,.3);
+    background:#fff;
+    padding:10px;
+    font-size:12px;
+    font-weight:400;
+    border-radius:10px;
+    unicode-bidi:plaintext
+}
+.tooltipster-sidetip .tooltipster-arrow-border{
+    border:none
+}
+.tooltipster-sidetip.tooltipster-right .tooltipster-arrow-background{
+    left:1px
+}
+.vdf_search_summary{
+    margin-bottom:20px
+}
+.vdf_left_summary{
+    float:left;
+    display:block
+}
+.dot_spinner{
+    float:left;
+    position:relative;
+    display:none;
+    width:35px;
+    height:35px;
+    background-color:#333;
+    border-radius:100%;
+    -webkit-animation:sk-scaleout .5s infinite ease-in-out;
+    animation:sk-scaleout .5s infinite ease-in-out
+}
+.vdf_toggle_filter{
+    display:none
+}
+.vdf_text_search_summary{
+    width:35%;
+    float:left;
+    margin:0;
+    margin-left:10px;
+    padding-left:10px;
+    font-size:12px;
+    line-height:1.25em
+}
+.vdf_text_search_summary span{
+    font-weight:700;
+    line-height:35px
+}
+.vdf_search_sorting{
+    line-height:1.25em;
+    float:right;
+    max-width:175px;
+    width:100%;
+    box-shadow:0 1px 2px 0 rgba(34,36,38,.15);
+    font-size:12px;
+    margin-left:5px
+}
+.vdf_search_sorting select{
+    padding:6px;
+    z-index:1
+}
+.vdf_search_sorting a{
+    color:#58595b;
+    font-size:12px;
+    font-weight:400
+}
+.vdf_search_sorting .dd-select{
+    border:1px solid #999
+}
+.vdf_search_sorting .dd-container .dd-pointer-down{
+    background-image:url(/Components/VDFactory/assets/images/icon_sprites.png);
+    background-position:-254px -72px;
+    background-repeat:no-repeat
+}
+.vdf_search_sorting .dd-container .dd-pointer-up{
+    background-position:-272px -72px;
+    right:8px
+}
+.vdf_search_sorting .dd-options{
+    max-height:inherit !important
+}
+.hotel-currency,.flight-currency{
+    max-width:80px
+}
+.hotel-currency .dd-options,.flight-currency .dd-options{
+    max-height:168px !important
+}
+@media(max-width:1060px){
+    .homepage_section{
+        background:#fff
+    }
+    .homepage_wrap,.vdf_flight_search{
+        background:#ececec
+    }
+    .vdf_search_summary{
+        padding:10px;
+        margin:0
+    }
+    .vdf_left_summary{
+        display:none
+    }
+    .vdf_toggle_filter{
+        display:block;
+        float:left;
+        padding:8px
+    }
+    .tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background{
+        top:-1px
+    }
+}
+@media(max-width:767px){
+    .vdf_text_search_summary{
+        width:30%;
+        padding-left:0
+    }
+    .vdf_text_search_summary span{
+        line-height:1.25em;
+        margin-top:6px;
+        display:inline-block
+    }
+    .vdf_search_sorting{
+        max-width:26%
+    }
+    .vdf_search_sorting select{
+        width:100%
+    }
+    .hotel-currency,.flight-currency{
+        max-width:66px
+    }
+}
+body.on{
+    height:100%;
+    width:100%;
+    overflow:hidden;
+    position:fixed;
+    top:0
+}
+.footer-socials,.footer,.copyright{
+    background:#fff
+}
+.vdf_search_filters_column{
+    float:left;
+    width:250px;
+    background-color:#fff;
+    box-shadow:0 1px 2px 0 rgba(34,36,38,.15)
+}
+.vdf_search_result_column{
+    float:right;
+    margin-left:10px;
+    width:800px;
+    position:relative;
+    min-height:450px
+}
+@media(max-width:1060px){
+    .homepage_wrap.on:after{
+        content:'';
+        position:fixed;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,.5);
+        top:0;
+        left:0;
+        z-index:10
+    }
+    .vdf_search_filters_column{
+        position:fixed;
+        top:111px;
+        z-index:9999;
+        left:-100%;
+        -webkit-transition:all .35s cubic-bezier(.215,.61,.355,1);
+        transition:all .35s cubic-bezier(.215,.61,.355,1);
+        z-index:11
+    }
+    .vdf_search_filters_column.on{
+        left:0
+    }
+    .vdf_search_result_column{
+        width:100%;
+        padding:10px;
+        min-height:50vh
+    }
+}
+@media(max-width:767px){
+    .vdf_search_filters_column{
+        top:85px
+    }
+    .vdf_search_result_column{
+        padding:0;
+        background:#ececec;
+        min-height:100vh
+    }
+}
+.button_close_filter{
+    display:none
+}
+@media(max-width:1060px){
+    .button_close_filter{
+        display:block;
+        position:absolute;
+        top:0;
+        right:8px;
+        font-weight:100;
+        font-size:24px;
+        outline:none;
+        z-index:12;
+        width:24px
+    }
+    .zh .button_close_filter{
+        font-size:18px;
+        right:5px;
+        top:4px
+    }
+}
+.maintainer-first-gbfb{
+    width:270px;
+    float:left;
+    margin-right:22px
+}
+.general-booking-flight-tab .txtTbTo{
+    margin-bottom:0 !important
+}
+.maintainer-second-gbfb{
+    width:215px;
+    float:left
+}
+.maintainer-btn-gbfb{
+    width:100px;
+    float:left
+}
+.general-booking-flight-widget{
+    background-color:#ececec !important;
+    background:#ececec !important;
+    padding-top:40px;
+    padding-bottom:40px;
+    margin-bottom:70px
+}
+.general-booking-flight-widget .dd-select{
+    height:46px
+}
+.general-booking-flight-widget .vdf-booking-btn{
+    height:100px;
+    margin-top:30px
+}
+.general-booking-flight-widget .vdf-booking-btn{
+    display:table !important;
+    border:1px solid #009ade
+}
+.general-booking-flight-widget .vdf-booking-btn span{
+    display:table-cell;
+    table-layout:fixed;
+    vertical-align:middle;
+    font-size:35px
+}
+.general-booking-flight-widget .dd-selected{
+    padding-top:5px
+}
+.general-booking-flight-tab .maintainer-first-gbfb .input-text input{
+    height:43px;
+    margin-bottom:13px
+}
+.maintainer-third-gbfb .three-dropdown{
+    margin-top:0
+}
+.maintainer-third-gbfb .dd-container .dd-select{
+    height:43px
+}
+.maintainer-third-gbfb .economy-ddl.input-container{
+    width:100% !important;
+    margin-top:15px
+}
+.general-booking-flight-tab .booking-wrap-headi h3{
+    font-size:24px;
+    margin-top:0;
+    margin-bottom:30px;
+    color:#484848
+}
+.general-booking-flight-widget{
+    margin-top:0
+}
+.general-booking-flight-widget .select-container{
+    margin-top:30px
+}
+.general-booking-flight-tab{
+    max-width:1020px;
+    margin:0 auto
+}
+.general-booking-flight-tab .maintainer-btn-gbfb{
+    width:100px;
+    float:left
+}
+.general-booking-flight-tab .maintainer-first-gbfb{
+    margin-right:38px
+}
+.general-booking-flight-tab .maintainer-second-gbfb .input-container{
+    margin-top:-30px
+}
+.general-booking-flight-tab .vdf-booking-btn{
+    margin-top:-9px
+}
+.general-booking-flight-tab .maintainer-third-gbfb .book-flight-dropdowns{
+    margin-top:-9px
+}
+.general-booking-flight-tab .maintainer-third-gbfb{
+    width:320px;
+    margin-top:-36px
+}
+.general-booking-flight-tab .trip-planner-add-event-container{
+    padding:0
+}
+.dd-options{
+    width:100% !important
+}
+.general-booking-flight-tab .dd-options .dd-option label{
+    margin-top:0
+}
+.general-booking-hotel-tab{
+    max-width:630px;
+    margin:0 auto
+}
+.lbl-bookfl-wrap label span{
+    color:#484848 !important
+}
+.booking-widget.general-booking-hotel-widget .trip-planner-add-event-container{
+    background-color:#ececec !important;
+    background:#ececec !important
+}
+.general-booking-hotel-tab .booking-wrap-headi h3{
+    font-size:24px;
+    margin-top:0
+}
+.maintainer-first-gbfb .booking-wraping{
+    padding-top:0
+}
+.maintainer-first-gbfb .input-container label{
+    margin-top:5px;
+    color:#484848
+}
+.lbl-bookfl-wrap .lbl-bookfl{
+    display:table
+}
+.lbl-bookfl-wrap .lbl-bookfl span{
+    table-layout:fixed;
+    vertical-align:bottom;
+    display:table-cell
+}
+.vdf_pagination{
+    margin:10px 0;
+    padding:10px;
+    background-color:#fff;
+    box-shadow:0 1px 2px 0 rgba(34,36,38,.15)
+}
+.vdf_pagination_result{
+    float:left
+}
+.vdf_pagination h5{
+    margin:0;
+    line-height:1.25em;
+    display:table-cell;
+    vertical-align:middle;
+    height:40px;
+    padding-left:10px
+}
+.vdf_pagination ul{
+    float:right;
+    margin:0
+}
+.vdf_pagination ul li{
+    float:left;
+    margin-left:1px
+}
+.vdf_pagination ul li a{
+    font-size:1em;
+    line-height:1.25em;
+    display:block;
+    padding:10px 15px;
+    background:#fff;
+    color:#009ade;
+    font-weight:600;
+    border:1px solid #009ade
+}
+.vdf_pagination ul li a.active,.pagination>.active>a,.pagination>.active>span,.pagination>.active>a:hover,.pagination>.active>span:hover,.pagination>.active>a:focus,.pagination>.active>span:focus{
+    background-color:#009ade;
+    color:#fff;
+    border-color:#009ade
+}
+.vdf_pagination ul li a:hover{
+    background-color:#0077c0;
+    color:#fff;
+    border-color:#0077c0
+}
+.vdf_pagination ul li a i.fa{
+    font-size:1em !important
+}
+.ui-autocomplete{
+    box-shadow:5px 0 20px 0 rgba(34,36,38,.15);
+    width:auto !important;
+    max-width:250px;
+    border:1px solid #dbdbdb;
+    z-index:11;
+    position:absolute !important
+}
+.ui-autocomplete .ui-menu-item{
+    background:#fff;
+    font-size:14px;
+    width:auto;
+    max-width:250px;
+    padding:10px;
+    height:auto;
+    line-height:1em;
+    white-space:normal;
+    cursor:pointer;
+    border-bottom:1px solid #dbdbdb
+}
+.ui-autocomplete .ui-menu-item:last-child{
+    border-bottom:none
+}
+.ui-autocomplete .ui-menu-item:hover{
+    background:#f1f1f1
+}
+.ui-autocomplete .ui-menu-item a{
+    color:#333;
+    display:-ms-inline-flexbox;
+    display:-webkit-inline-flex;
+    display:inline-flex;
+    box-sizing:border-box;
+    line-height:1.25em
+}
+.ui-autocomplete .ui-menu-item:hover i{
+    color:#333
+}
+.ui-autocomplete .ui-menu-item i{
+    color:#999;
+    margin-right:10px;
+    font-size:20px !important
+}
+.ui-helper-hidden-accessible{
+    display:none
+}
+@media(min-width:768px) and (max-width:1024px){
+    .vdfactory-getting-wrap{
+        padding-left:15px;
+        padding-right:15px
+    }
+    .general-booking-flight-tab .maintainer-first-gbfb{
+        width:49% !important;
+        margin:0 !important
+    }
+    .booking-widget-flights{
+        padding-left:15px;
+        padding-right:15px
+    }
+    .booking-widget-flights .maintainer-third-gbfb{
+        width:80% !important;
+        margin-right:2.3% !important
+    }
+    .general-booking-flight-tab .vdf-booking-btn{
+        margin-top:27px
+    }
+    .general-booking-flight-tab{
+        max-width:80%;
+        margin:0 auto
+    }
+    .booking-wraping-calendar{
+        float:right
+    }
+    .general-booking-flight-tab .maintainer-second-gbfb{
+        float:right
+    }
+    .general-booking-flight-widget{
+        padding-bottom:40px
+    }
+    .general-booking-flight-tab .trip-planner-add-event-container{
+        margin-bottom:0
+    }
+    .general-booking-flight-tab .maintainer-first-gbfb.tab-gbtb{
+        width:60% !important
+    }
+    .general-booking-flight-tab .maintainer-second-gbfb{
+        width:36% !important
+    }
+    .general-booking-flight-widget{
+        margin-bottom:0
+    }
+    .homepage_wrap{
+        padding-bottom:0 !important
+    }
+}
+@media(max-width:767px){
+    .general-booking-flight-tab .trip-planner-add-event-container,.general-booking-hotel-tab .booking-widget-hotels{
+        padding-left:30px;
+        padding-right:30px
+    }
+    .maintainer-first-gbfb{
+        width:100% !important;
+        float:none !important
+    }
+    .maintainer-first-gbfb{
+        width:100% !important
+    }
+    .maintainer-first-gbfb{
+        width:100% !important
+    }
+    .general-booking-flight-widget .maintainer-btn-gbfb{
+        width:100% !important;
+        float:none !important
+    }
+    .general-booking-flight-tab .maintainer-third-gbfb{
+        margin-top:15px
+    }
+    .general-booking-flight-tab .booking-wraping-calendar{
+        margin-top:15px
+    }
+    .general-booking-flight-tab .vdf-booking-btn{
+        display:block !important;
+        height:55px !important
+    }
+    .general-booking-flight-widget .vdf-booking-btn span{
+        display:block !important
+    }
+    .general-booking-flight-widget{
+        padding-bottom:40px;
+        margin-bottom:0
+    }
+    .general-booking-flight-tab .maintainer-second-gbfb .input-container{
+        margin-top:0
+    }
+    .maintainer-third-gbfb .economy-ddl.input-container{
+        margin-left:0;
+        margin-right:0
+    }
+    .general-booking-flight-widget .booking-widget-flights .maintainer-btn-gbfb{
+        position:relative;
+        top:15px
+    }
+    .general-booking-flight-widget .booking-widget-flights .maintainer-btn-gbfb .glyphicon-vdf-search,.general-booking-hotel-tab .booking-widget-hotels .maintainer-btn-gbfb .glyphicon-vdf-search{
+        top:-5px
+    }
+    .general-booking-hotel-tab .booking-widget-hotels .maintainer-btn-gbfb .vdf-booking-btn{
+        margin-top:15px
+    }
+    .general-booking-flight-widget .vdf-booking-btn{
+        height:55px;
+        display:block !important
+    }
+    .vdf_pagination_result{
+        float:none;
+        text-align:center
+    }
+    .vdf_pagination h5{
+        display:inline-block;
+        height:auto;
+        margin-bottom:20px;
+        padding-left:0
+    }
+    .vdf_pagination{
+        float:none;
+        text-align:center
+    }
+    .vdf_pagination ul{
+        float:none;
+        display:inline-block
+    }
+    .ui-autocomplete{
+        max-height:300px;
+        overflow:auto
+    }
+}
+@media only screen and (max-width:479px){
+    .copyright{
+        padding:0 20px 30px 20px;
+        margin:0
+    }
+}
+@-webkit-keyframes bell_buzz{
+    10%{
+        -webkit-transform:translateX(3px) rotate(2deg);
+        transform:translateX(3px) rotate(2deg)
+    }
+    20%{
+        -webkit-transform:translateX(-3px) rotate(-2deg);
+        transform:translateX(-3px) rotate(-2deg)
+    }
+    30%{
+        -webkit-transform:translateX(3px) rotate(2deg);
+        transform:translateX(3px) rotate(2deg)
+    }
+    40%{
+        -webkit-transform:translateX(-3px) rotate(-2deg);
+        transform:translateX(-3px) rotate(-2deg)
+    }
+    50%{
+        -webkit-transform:translateX(2px) rotate(1deg);
+        transform:translateX(2px) rotate(1deg)
+    }
+    60%{
+        -webkit-transform:translateX(-2px) rotate(-1deg);
+        transform:translateX(-2px) rotate(-1deg)
+    }
+    70%{
+        -webkit-transform:translateX(2px) rotate(1deg);
+        transform:translateX(2px) rotate(1deg)
+    }
+    80%{
+        -webkit-transform:translateX(-2px) rotate(-1deg);
+        transform:translateX(-2px) rotate(-1deg)
+    }
+    90%{
+        -webkit-transform:translateX(1px) rotate(0);
+        transform:translateX(1px) rotate(0)
+    }
+    100%{
+        -webkit-transform:translateX(-1px) rotate(0);
+        transform:translateX(-1px) rotate(0)
+    }
+}
+@keyframes bell_buzz{
+    10%{
+        -webkit-transform:translateX(3px) rotate(2deg);
+        transform:translateX(3px) rotate(2deg)
+    }
+    20%{
+        -webkit-transform:translateX(-3px) rotate(-2deg);
+        transform:translateX(-3px) rotate(-2deg)
+    }
+    30%{
+        -webkit-transform:translateX(3px) rotate(2deg);
+        transform:translateX(3px) rotate(2deg)
+    }
+    40%{
+        -webkit-transform:translateX(-3px) rotate(-2deg);
+        transform:translateX(-3px) rotate(-2deg)
+    }
+    50%{
+        -webkit-transform:translateX(2px) rotate(1deg);
+        transform:translateX(2px) rotate(1deg)
+    }
+    60%{
+        -webkit-transform:translateX(-2px) rotate(-1deg);
+        transform:translateX(-2px) rotate(-1deg)
+    }
+    70%{
+        -webkit-transform:translateX(2px) rotate(1deg);
+        transform:translateX(2px) rotate(1deg)
+    }
+    80%{
+        -webkit-transform:translateX(-2px) rotate(-1deg);
+        transform:translateX(-2px) rotate(-1deg)
+    }
+    90%{
+        -webkit-transform:translateX(1px) rotate(0);
+        transform:translateX(1px) rotate(0)
+    }
+    100%{
+        -webkit-transform:translateX(-1px) rotate(0);
+        transform:translateX(-1px) rotate(0)
+    }
+}
+@-webkit-keyframes load_rotate{
+    100%{
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg)
+    }
+}
+@keyframes load_rotate{
+    100%{
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg)
+    }
+}
+.fa-spin{
+    -webkit-animation:fa-spin 2s infinite linear;
+    animation:fa-spin 2s infinite linear
+}
+@-webkit-keyframes fa-spin{
+    0%{
+        -webkit-transform:rotate(0deg);
+        transform:rotate(0deg)
+    }
+    100%{
+        -webkit-transform:rotate(359deg);
+        transform:rotate(359deg)
+    }
+}
+@keyframes fa-spin{
+    0%{
+        -webkit-transform:rotate(0deg);
+        transform:rotate(0deg)
+    }
+    100%{
+        -webkit-transform:rotate(359deg);
+        transform:rotate(359deg)
+    }
+}
+@keyframes ellipsis{
+    to{
+        width:1.25em
+    }
+}
+@-webkit-keyframes ellipsis{
+    to{
+        width:1.25em
+    }
+}
+@-webkit-keyframes sk-scaleout{
+    0%{
+        -webkit-transform:scale(0)
+    }
+    100%{
+        -webkit-transform:scale(1);
+        opacity:0
+    }
+}
+@keyframes sk-scaleout{
+    0%{
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    100%{
+        -webkit-transform:scale(1);
+        transform:scale(1);
+        opacity:0
+    }
+}
+.search-h-title{
+    margin-top:-20px
+}
+.search-f-title{
+    margin-top:0;
+    margin-bottom:20px
+}
